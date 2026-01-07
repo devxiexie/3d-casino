@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    
+    <div class="ui-overlay">
+        <div class="payout-table">
+            <div class="payout-header">PAYOUTS (3x MATCH)</div>
+            <div class="payout-grid">
+                <div class="payout-item legendary">
+                    <span class="symbol"><img src="assets/08.png" class="pixel-art" alt="777"></span> <span class="value">1000</span>
+                </div>
+                <div class="payout-item epic">
+                    <span class="symbol"><img src="assets/09.png" class="pixel-art" alt="Diamond"></span> <span class="value">500</span>
+                </div>
+                <div class="payout-item rare">
+                    <span class="symbol"><img src="assets/10.png" class="pixel-art" alt="Bag"></span> <span class="value">200</span>
+                </div>
+                <div class="payout-item uncommon">
+                    <span class="symbol"><img src="assets/11.png" class="pixel-art" alt="Bell"></span> <span class="value">100</span>
+                </div>
+                <div class="payout-item common">
+                    <span class="symbol"><img src="assets/12.png" class="pixel-art" alt="Clover"></span> <span class="value">50</span>
+                </div>
+                <div class="payout-item basic">
+                    <span class="symbol"><img src="assets/13.png" class="pixel-art" alt="Grape"></span> <span class="value">10</span>
+                </div>
+            </div>
+            <div class="payout-footer">ANY PAIR = 20% OF VALUE</div>
+        </div>
+
+        <div class="display-panel">
+            <div class="score-board">
+                <span>CREDITS: </span>
+                <span id="credits">100</span>
+            </div>
+            <div class="message-board" id="message">CLICK LEVER TO SPIN!</div>
+        </div>
+    </div>
+
+    <script src="game3d.js"></script>
+</body>
+</html>
