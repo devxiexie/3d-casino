@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+
+#game-container canvas {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.payout-table {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 0 0 15px 0;
+    width: 220px;
+    pointer-events: auto;
+    border: 2px solid #ffd700;
+    border-left: none;
+    border-top: none;
+}
+
+.payout-header {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.payout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.payout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.payout-item .symbol {
+    font-size: 1.5em;
+}
+
+.payout-item .value {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.legendary { color: #ff00ff; }
+.epic { color: #00ffff; }
+.rare { color: #ffd700; }
+.uncommon { color: #ff0000; }
+.common { color: #00ff00; }
+.basic { color: #ffffff; }
+
+.payout-footer {
+    margin-top: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    color: #aaa;
+}
+
+
+.display-panel {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.score-board {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    text-shadow: 0 0 5px #ffd700;
+    pointer-events: auto;
+}
+
+.message-board {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+img.pixel-art {
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    vertical-align: middle;
+}
